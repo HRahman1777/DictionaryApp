@@ -12,11 +12,11 @@ public class Feedback extends AppCompatActivity {
 
     public Button buttonSubmitFb;
     public EditText editTextNameFb, editTextEmailFb, editTextWordFb, editTextMeaningFb, editTextCommnet;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
-
         buttonSubmitFb = findViewById(R.id.submitfbBtnID);
         editTextNameFb = findViewById(R.id.nameETID);
         editTextEmailFb = findViewById(R.id.emailETID);
