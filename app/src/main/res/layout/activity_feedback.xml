@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Feedback">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feedback"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textSize="45dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Name: "
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:gravity="right"
+            />
+        <EditText
+            android:id="@+id/nameETID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="enter name"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:gravity="left"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Email: "
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:gravity="right"
+            />
+        <EditText
+            android:id="@+id/emailETID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="enter email"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:gravity="left"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Word: "
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:gravity="right"
+            />
+        <EditText
+            android:id="@+id/wordETID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="word"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:gravity="left"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Meaning: "
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:gravity="right"
+            />
+        <EditText
+            android:id="@+id/meanETID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="meaning"
+            android:textColor="#000"
+            android:gravity="left"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment About This App"
+        android:textSize="25dp"
+        android:textColor="#000"
+        />
+    <EditText
+        android:id="@+id/commentETID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter comment"
+        android:textColor="#000"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/submitfbBtnID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        />
+
+</LinearLayout>
