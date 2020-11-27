@@ -8,10 +8,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Feedback extends AppCompatActivity {
 
     public Button buttonSubmitFb;
     public EditText editTextNameFb, editTextEmailFb, editTextWordFb, editTextMeaningFb, editTextCommnet;
+
+    DatabaseReference databaseReference; //db1
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +29,8 @@ public class Feedback extends AppCompatActivity {
         editTextMeaningFb = findViewById(R.id.meanETID);
         editTextCommnet = findViewById(R.id.commentETID);
 
+        databaseReference = FirebaseDatabase.getInstance().getReference("feedback"); //db2
+
         buttonSubmitFb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,7 +39,15 @@ public class Feedback extends AppCompatActivity {
                 String strCmt = editTextCommnet.getText().toString();
                 String strMean = editTextMeaningFb.getText().toString();
                 String strWord = editTextWordFb.getText().toString();
-                Toast.makeText(getApplicationContext(),"Word: "+strWord+"\nMeaning :"+strMean,Toast.LENGTH_SHORT).show();
+                String key = databaseReference.push().getKey();
+
+                //db3
+                UploadFeedbackData uploadFeedbackData = new UploadFeedbackData(strName, strEmail, strWord, strMean, strCmt);
+                databaseReference.child(key).setValue(uploadFeedbackData); //db4
+                Toast.makeText(getApplicationContext(),"Upload successful !",Toast.LENGTH_SHORT).show();
+                editTextWordFb.setText(null);
+                editTextMeaningFb.setText(null);
+                editTextCommnet.setText(null);
             }
         });
 

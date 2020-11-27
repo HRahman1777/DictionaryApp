@@ -22,7 +22,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:weightSum="2"
         >
         <TextView
             android:layout_width="wrap_content"
@@ -30,8 +29,6 @@
             android:text="Name: "
             android:textSize="25dp"
             android:textColor="#000"
-            android:layout_weight="1"
-            android:gravity="right"
             />
         <EditText
             android:id="@+id/nameETID"
@@ -40,7 +37,6 @@
             android:hint="enter name"
             android:textColor="#000"
             android:layout_weight="1"
-            android:gravity="left"
             />
     </LinearLayout>
 
@@ -48,7 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:weightSum="2"
+
         >
         <TextView
             android:layout_width="wrap_content"
@@ -56,8 +52,7 @@
             android:text="Email: "
             android:textSize="25dp"
             android:textColor="#000"
-            android:layout_weight="1"
-            android:gravity="right"
+
             />
         <EditText
             android:id="@+id/emailETID"
@@ -66,7 +61,6 @@
             android:hint="enter email"
             android:textColor="#000"
             android:layout_weight="1"
-            android:gravity="left"
             />
     </LinearLayout>
 
@@ -75,7 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:weightSum="2"
+
         >
         <TextView
             android:layout_width="wrap_content"
@@ -83,8 +77,7 @@
             android:text="Word: "
             android:textSize="25dp"
             android:textColor="#000"
-            android:layout_weight="1"
-            android:gravity="right"
+
             />
         <EditText
             android:id="@+id/wordETID"
@@ -93,14 +86,14 @@
             android:hint="word"
             android:textColor="#000"
             android:layout_weight="1"
-            android:gravity="left"
+
             />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:weightSum="2"
+
         >
         <TextView
             android:layout_width="wrap_content"
@@ -108,8 +101,7 @@
             android:text="Meaning: "
             android:textSize="25dp"
             android:textColor="#000"
-            android:layout_weight="1"
-            android:gravity="right"
+
             />
         <EditText
             android:id="@+id/meanETID"
@@ -117,7 +109,6 @@
             android:layout_height="wrap_content"
             android:hint="meaning"
             android:textColor="#000"
-            android:gravity="left"
             android:layout_weight="1"
             />
     </LinearLayout>

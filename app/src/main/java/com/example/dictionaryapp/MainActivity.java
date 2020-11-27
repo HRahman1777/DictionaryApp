@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             @Override
             public void onClick(View v) {
                 Intent intent;
-                intent = new Intent((MainActivity.this), (AdminLogin.class));
+                intent = new Intent((MainActivity.this), (AdminPanel.class)); //mark
                 startActivity(intent);
             }
         });

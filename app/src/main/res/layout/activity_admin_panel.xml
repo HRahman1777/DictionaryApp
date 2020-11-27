@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     tools:context=".AdminPanel">
 
     <TextView
@@ -16,64 +15,89 @@
         android:gravity="center"
         android:textSize="40dp"
         android:layout_marginBottom="15dp"
+
         />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
         android:gravity="center"
-        android:weightSum="2"
         >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Word: "
-            android:textSize="25dp"
-            android:textColor="#000"
-            android:layout_weight="1"
-            android:gravity="right"
-            />
-        <EditText
-            android:id="@+id/word_apETID"
-            android:layout_width="wrap_content"
+
+        <ListView
+            android:id="@+id/feedbackListID"
+            android:listSelector="#C8FDD835"
+            android:dividerHeight="2dp"
+            android:divider="#1A73C0"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="word"
-            android:textColor="#000"
-            android:layout_weight="1"
-            android:gravity="left"
+            android:layout_weight="2"
             />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:weightSum="2"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Meaning: "
-            android:textSize="25dp"
-            android:textColor="#000"
-            android:layout_weight="1"
-            android:gravity="right"
-            />
-        <EditText
-            android:id="@+id/mean_apETID"
-            android:layout_width="wrap_content"
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="meaning"
-            android:textColor="#000"
-            android:gravity="left"
-            android:layout_weight="1"
-            />
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Word: "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    />
+                <EditText
+                    android:id="@+id/word_apETID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="word"
+                    android:textColor="#000"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Meaning: "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    />
+                <EditText
+                    android:id="@+id/mean_apETID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="meaning"
+                    android:textColor="#000"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit_apBtnID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                />
+
+        </LinearLayout>
+
     </LinearLayout>
 
-    <Button
-        android:id="@+id/submit_apBtnID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Submit"
-        />
+
+
 
 </LinearLayout>

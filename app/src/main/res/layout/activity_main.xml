@@ -26,6 +26,9 @@
             >
             <ListView
                 android:id="@+id/listViewID"
+                android:listSelector="#C8FDD835"
+                android:dividerHeight="2dp"
+                android:divider="#1A73C0"
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -36,7 +39,6 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:textSize="15dp"
-                android:text="heasdasdasre"
                 android:textColor="#000"
                 android:layout_weight="2"
                 />
