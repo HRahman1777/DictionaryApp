@@ -41,13 +41,17 @@ public class Feedback extends AppCompatActivity {
                 String strWord = editTextWordFb.getText().toString();
                 String key = databaseReference.push().getKey();
 
-                //db3
-                UploadFeedbackData uploadFeedbackData = new UploadFeedbackData(strName, strEmail, strWord, strMean, strCmt);
-                databaseReference.child(key).setValue(uploadFeedbackData); //db4
-                Toast.makeText(getApplicationContext(),"Upload successful !",Toast.LENGTH_SHORT).show();
-                editTextWordFb.setText(null);
-                editTextMeaningFb.setText(null);
-                editTextCommnet.setText(null);
+                if (strName.equals("") || strCmt.equals("")){
+                    Toast.makeText(getApplicationContext(),"Please enter at least name and comment!",Toast.LENGTH_SHORT).show();
+                }else {
+                    //db3
+                    UploadFeedbackData uploadFeedbackData = new UploadFeedbackData(strName, strEmail, strWord, strMean, strCmt);
+                    databaseReference.child(key).setValue(uploadFeedbackData); //db4
+                    Toast.makeText(getApplicationContext(),"Thanks For Feedback!",Toast.LENGTH_SHORT).show();
+                    editTextWordFb.setText(null);
+                    editTextMeaningFb.setText(null);
+                    editTextCommnet.setText(null);
+                }
             }
         });
 

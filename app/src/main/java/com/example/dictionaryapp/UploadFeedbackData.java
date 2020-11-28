@@ -7,6 +7,10 @@ public class UploadFeedbackData {
     private String meaning;
     private String comment;
 
+    public UploadFeedbackData() {
+
+    }
+
     public UploadFeedbackData(String name, String email, String word, String meaning, String comment) {
         this.name = name;
         this.email = email;

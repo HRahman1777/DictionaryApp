@@ -12,11 +12,9 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class MainActivity extends AppCompatActivity{
 
     public Button buttonLoad, buttonAdmin, buttonFeedback, buttonAboutInt;
-    public ListView listView1;
-    public TextView textViewShow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,19 +22,16 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         setContentView(R.layout.activity_main);
 
         buttonAdmin = findViewById(R.id.adminBtnID);
-        buttonLoad = findViewById(R.id.loadBtnID);
+        buttonLoad = findViewById(R.id.dictBtnID);
         buttonFeedback = findViewById(R.id.feedbackBtnID);
         buttonAboutInt =findViewById(R.id.aboutBtnID);
-        textViewShow = findViewById(R.id.showTextID);
 
-        listView1 = findViewById(R.id.listViewID);
-        listViewWork();
 
         buttonAdmin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent;
-                intent = new Intent((MainActivity.this), (AdminPanel.class)); //mark
+                intent = new Intent((MainActivity.this), (AdminLogin.class)); //mark
                 startActivity(intent);
             }
         });
@@ -62,22 +57,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         buttonLoad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent;
+                intent = new Intent((MainActivity.this), (MainDictonary.class));
+                startActivity(intent);
             }
         });
 
     }
 
-    private void listViewWork() {
-        String[] my_list = {"itemOne", "itemTwo", "itemThree"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, my_list);
-        listView1.setAdapter(adapter);
-        listView1.setOnItemClickListener(this);
-    }
-
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        String selectedValue = parent.getItemAtPosition(position).toString();
-        textViewShow.setText(selectedValue);
-    }
 }

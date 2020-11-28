@@ -22,6 +22,7 @@ public class About extends AppCompatActivity {
         buttonAbout = findViewById(R.id.aboutFragID);
         buttonAother = findViewById(R.id.anotherFragBtnID);
 
+
         buttonAbout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -1,7 +1,9 @@
 package com.example.dictionaryapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -22,12 +24,10 @@ import java.util.List;
 
 public class AdminPanel extends AppCompatActivity {
 
-    public Button buttonSubmitAP;
+    public Button buttonSubmitAP, buttonFeedbackAP;
     public EditText editTextWordAP, editTextMeaningAP;
-    public ListView listViewFeedback;
     DatabaseReference databaseReference;
 
-    public List<UploadFeedbackData> uploadedFeedbackList;  //reDB1
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,64 +35,44 @@ public class AdminPanel extends AppCompatActivity {
         setContentView(R.layout.activity_admin_panel);
 
         buttonSubmitAP = findViewById(R.id.submit_apBtnID);
+        buttonFeedbackAP = findViewById(R.id.feedback_apBtnID);
         editTextWordAP = findViewById(R.id.word_apETID);
         editTextMeaningAP = findViewById(R.id.mean_apETID);
-        listViewFeedback = findViewById(R.id.feedbackListID);
 
-        uploadedFeedbackList = new ArrayList<>(); //reDB2
-
-        databaseReference = FirebaseDatabase.getInstance().getReference("feedback/");
-        //retriveingData(); //reDB3
+        databaseReference = FirebaseDatabase.getInstance().getReference("word");
 
         buttonSubmitAP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String strWord = editTextWordAP.getText().toString();
-                String strMean = editTextMeaningAP.getText().toString();
-                Toast.makeText(getApplicationContext(),"Word: "+strWord+"\nMeaning :"+strMean,Toast.LENGTH_SHORT).show();
-            }
-        });
+                String strW = editTextWordAP.getText().toString();
+                String strM = editTextMeaningAP.getText().toString();
 
 
-        listViewFeedback.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                UploadFeedbackData uploadFeedbackData = uploadedFeedbackList.get(i); //reDB3
-                String strW = uploadFeedbackData.getWord();
-                String strM = uploadFeedbackData.getMeaning();
-                editTextWordAP.setText(strW);
-                editTextMeaningAP.setText(strM);
-            }
-        });
+                if (strW.equals("") || strM.equals("")){
+                    Toast.makeText(getApplicationContext(),"Please Enter Value Properly!",Toast.LENGTH_SHORT).show();
+                }else{
+                    String key = editTextWordAP.getText().toString().toLowerCase();
 
-
-
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                    UploadFeedbackData uploadFeedbackDataL = postSnapshot.getValue(UploadFeedbackData.class);
-                    uploadedFeedbackList.add(uploadFeedbackDataL);
+                    UploadWordMeaning uploadWordMeaning = new UploadWordMeaning(strW, strM);
+                    databaseReference.child(key).setValue(uploadWordMeaning);
+                    Toast.makeText(getApplicationContext(),"Upload successful !",Toast.LENGTH_SHORT).show();
+                    editTextWordAP.setText(null);
+                    editTextMeaningAP.setText(null);
                 }
 
-                String[] uploads = new String[uploadedFeedbackList.size()];
-
-                for (int i = 0; i < uploads.length; i++) {
-                    uploads[i] = uploadedFeedbackList.get(i).getName();
-                }
-
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, uploads);
-                listViewFeedback.setAdapter(adapter);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
 
             }
         });
-
-
+        buttonFeedbackAP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+                intent = new Intent((AdminPanel.this), (FeedbackDetails.class));
+                startActivity(intent);
+            }
+        });
 
     }
+
 
 }

@@ -1,14 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".AboutFrag">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="About Frag" />
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_gravity="top"
+        android:layout_marginBottom="50dp"
+        android:textColor="#4C0CA7"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#9FE5EC7D"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dictionary App"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"
+            android:textColor="#4C0CA7"
+            />
+        <TextView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_this_app"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Source Code: \nhttps://github.com/HRahman1777/DictionaryApp"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:textIsSelectable="true"
+            />
 
-</FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -3,4 +3,19 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="about_this_app">
+        This is a simple android app that fetch word and meaning from database.
+In this app here used Firebase as database. Admin can see feedback and also can add word meaning.
+        This app is developed for course project (Wireless Programming).\n
+    </string>
+
+    <string name="about_developer">
+        __ (Fall-2020) __\n
+        Varsity ID: 181-15-1777\n
+        Section: PC-B\n
+        Department: CSE (49th Batch)
+    </string>
+
+
 </resources>

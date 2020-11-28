@@ -3,6 +3,7 @@
     package="com.example.dictionaryapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".About"></activity>
+        <activity android:name=".FeedbackDetails"
+            android:parentActivityName=".AdminPanel" ></activity>
+        <activity
+            android:name=".MainDictonary"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".About"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Feedback"
             android:parentActivityName=".MainActivity" />

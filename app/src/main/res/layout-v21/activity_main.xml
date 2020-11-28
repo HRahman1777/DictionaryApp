@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="7"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="35dp"
+        android:background="#D9C6F1"
+        >
+        <Button
+            android:textSize="20dp"
+            android:background="#BC0091EA"
+            android:layout_marginTop="10dp"
+            android:id="@+id/dictBtnID"
+            android:text="Go To Dictionary"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            />
+        <Button
+            android:textSize="20dp"
+            android:background="#BC0091EA"
+            android:layout_marginTop="10dp"
+            android:id="@+id/adminBtnID"
+            android:text="Admin"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            />
+        <Button
+            android:textSize="20dp"
+            android:background="#BC0091EA"
+            android:layout_marginTop="10dp"
+            android:id="@+id/feedbackBtnID"
+            android:text="Feedback"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            />
+
+    </LinearLayout>
+    <Button
+        android:textSize="15dp"
+        android:background="#990091EA"
+        android:layout_marginTop="25dp"
+        android:id="@+id/aboutBtnID"
+        android:text="About"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        />
+
+
+</LinearLayout>

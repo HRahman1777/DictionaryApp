@@ -5,18 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:weightSum="6"
+    android:weightSum="7"
     android:orientation="vertical"
+    android:padding="25dp"
     tools:context=".About">
 
     <LinearLayout
-        android:layout_weight="5"
+        android:layout_weight="6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
         <fragment
             android:id="@+id/fragmentID"
-            android:name="com.example.dictionaryapp.AboutFrag"
+            android:name="com.example.dictionaryapp.BlankFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             />
@@ -27,19 +28,30 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
+        android:orientation="vertical"
         >
         <Button
-            android:id="@+id/anotherFragBtnID"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Feedback"
-            />
-        <Button
+            android:textSize="15dp"
             android:id="@+id/aboutFragID"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="About"
+            android:textAllCaps="false"
+            android:textStyle="italic"
+            android:background="#BC0091EA"
             />
+        <Button
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"
+            android:id="@+id/anotherFragBtnID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developed By"
+            android:textAllCaps="false"
+            android:textStyle="italic"
+            android:background="#BC0091EA"
+            />
+
     </LinearLayout>
 
 </LinearLayout>

@@ -5,99 +5,94 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".AdminPanel">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Admin Panel"
-        android:textColor="#000"
+        android:textSize="30dp"
         android:gravity="center"
-        android:textSize="40dp"
-        android:layout_marginBottom="15dp"
-
+        android:layout_gravity="top"
+        android:layout_marginBottom="50dp"
+        android:textColor="#4C0CA7"
+        android:textStyle="bold"
         />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="4"
         android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="#C8ABF3"
         >
-
-        <ListView
-            android:id="@+id/feedbackListID"
-            android:listSelector="#C8FDD835"
-            android:dividerHeight="2dp"
-            android:divider="#1A73C0"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:orientation="vertical"
-            android:layout_weight="2"
             >
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Word: "
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    />
-                <EditText
-                    android:id="@+id/word_apETID"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:hint="word"
-                    android:textColor="#000"
-                    android:layout_weight="1"
-                    />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Meaning: "
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    />
-                <EditText
-                    android:id="@+id/mean_apETID"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:hint="meaning"
-                    android:textColor="#000"
-                    />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/submit_apBtnID"
+            <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Submit"
+                android:layout_height="match_parent"
+                android:text="Word: "
+                android:textSize="15dp"
+                android:textColor="#000"
+                />
+            <EditText
+                android:id="@+id/word_apETID"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="word"
+                android:textColor="#000"
+                android:gravity="center"
+                android:background="#DEE9F3"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Meaning: "
+                android:textSize="15dp"
+                android:textColor="#000"
+                />
+            <EditText
+                android:id="@+id/mean_apETID"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="meaning"
+                android:textColor="#000"
+                android:gravity="center"
+                android:background="#DEE9F3"
                 />
 
         </LinearLayout>
 
     </LinearLayout>
 
+    <Button
+        android:layout_marginTop="25dp"
+        android:id="@+id/submit_apBtnID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="20dp"
+        android:background="#BC0091EA"
+        android:textStyle="italic"
+        />
 
-
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/feedback_apBtnID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Feedback"
+        android:textSize="20dp"
+        android:background="#BC0091EA"
+        android:textStyle="italic"
+        android:textAllCaps="false"
+        />
 
 </LinearLayout>

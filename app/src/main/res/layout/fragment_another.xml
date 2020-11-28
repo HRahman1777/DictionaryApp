@@ -1,14 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".AnotherFrag">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Another Frag" />
+        android:layout_height="wrap_content"
+        android:text="Developed By"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_gravity="top"
+        android:layout_marginBottom="50dp"
+        android:textColor="#4C0CA7"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#9FE5EC7D"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasibur Rahman"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"
+            android:textColor="#4C0CA7"
+            />
 
-</FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Academic Info"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_developer"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Facebook\nhttps://www.facebook.com/hr5h4nt0"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:textIsSelectable="true"
+            />
+        <TextView
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Github\nhttps://github.com/HRahman1777"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:textIsSelectable="true"
+            />
+        <TextView
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Google Site\nhttps://sites.google.com/diu.edu.bd/hasibur1777"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:textIsSelectable="true"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
