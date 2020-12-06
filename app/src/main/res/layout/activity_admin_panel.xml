@@ -12,10 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Admin Panel"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:gravity="center"
         android:layout_gravity="top"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="10dp"
         android:textColor="#4C0CA7"
         android:textStyle="bold"
         />
@@ -38,7 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Word: "
-                android:textSize="15dp"
+                android:textSize="10dp"
                 android:textColor="#000"
                 />
             <EditText
@@ -55,7 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Meaning: "
-                android:textSize="15dp"
+                android:textSize="10dp"
                 android:textColor="#000"
                 />
             <EditText
@@ -73,21 +73,24 @@
     </LinearLayout>
 
     <Button
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/submit_apBtnID"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
         android:text="Submit"
         android:textSize="20dp"
         android:background="#BC0091EA"
         android:textStyle="italic"
+        android:layout_gravity="center"
         />
 
     <Button
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/feedback_apBtnID"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
         android:text="View Feedback"
         android:textSize="20dp"
         android:background="#BC0091EA"

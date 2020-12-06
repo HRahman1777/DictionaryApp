@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:weightSum="7"
+    android:weightSum="8"
     android:orientation="vertical"
     android:padding="25dp"
     tools:context=".About">
 
     <LinearLayout
-        android:layout_weight="6"
+        android:layout_weight="7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
@@ -31,21 +31,21 @@
         android:orientation="vertical"
         >
         <Button
-            android:textSize="15dp"
+            android:textSize="10dp"
             android:id="@+id/aboutFragID"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="15dp"
             android:text="About"
             android:textAllCaps="false"
             android:textStyle="italic"
             android:background="#BC0091EA"
             />
         <Button
-            android:layout_marginTop="15dp"
-            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:textSize="10dp"
             android:id="@+id/anotherFragBtnID"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="15dp"
             android:text="Developed By"
             android:textAllCaps="false"
             android:textStyle="italic"

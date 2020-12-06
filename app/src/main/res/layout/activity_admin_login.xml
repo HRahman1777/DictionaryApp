@@ -12,10 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login For Admin Panel"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:gravity="center"
         android:layout_gravity="top"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="10dp"
         android:textColor="#4C0CA7"
         android:textStyle="bold"
         />
@@ -25,14 +25,14 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical"
-        android:padding="35dp"
+        android:padding="25dp"
         android:background="#C8ABF3"
         >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Username: "
-            android:textSize="15dp"
+            android:textSize="10dp"
             android:textColor="#000"
             />
 
@@ -50,14 +50,14 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Password: "
-            android:textSize="15dp"
+            android:textSize="10dp"
             android:textColor="#000"
             />
 
         <EditText
             android:id="@+id/paswdETID"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="45dp"
             android:hint="enter password"
             android:textColor="#000"
             android:gravity="center"
@@ -68,14 +68,16 @@
     </LinearLayout>
 
     <Button
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/loginBtnID"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
         android:text="Login"
         android:textSize="20dp"
         android:background="#BC0091EA"
         android:textStyle="italic"
+        android:layout_gravity="center"
         />
 
 

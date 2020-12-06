@@ -16,6 +16,7 @@
         android:orientation="vertical"
         android:padding="35dp"
         android:background="#D9C6F1"
+        android:gravity="center"
         >
         <Button
             android:textSize="20dp"
@@ -24,8 +25,8 @@
             android:id="@+id/dictBtnID"
             android:text="Go To Dictionary"
             android:textAllCaps="false"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
             android:textStyle="italic"
             />
         <Button
@@ -35,8 +36,8 @@
             android:id="@+id/adminBtnID"
             android:text="Admin"
             android:textAllCaps="false"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
             android:textStyle="italic"
             />
         <Button
@@ -46,8 +47,8 @@
             android:id="@+id/feedbackBtnID"
             android:text="Feedback"
             android:textAllCaps="false"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
             android:textStyle="italic"
             />
 
@@ -55,12 +56,12 @@
     <Button
         android:textSize="15dp"
         android:background="#990091EA"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/aboutBtnID"
         android:text="About"
         android:textAllCaps="false"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:textStyle="italic"
         />
 

@@ -11,10 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Developed By"
-        android:textSize="30dp"
+        android:textSize="15dp"
         android:gravity="center"
         android:layout_gravity="top"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="10dp"
         android:textColor="#4C0CA7"
         android:textStyle="bold"
         />
@@ -30,9 +30,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Hasibur Rahman"
-            android:textSize="25dp"
+            android:textSize="15dp"
             android:gravity="center"
-            android:layout_marginBottom="15dp"
             android:textColor="#4C0CA7"
             />
 
@@ -41,7 +40,7 @@
             android:layout_height="wrap_content"
             android:text="Academic Info"
             android:gravity="center"
-            android:textSize="20dp"
+            android:textSize="10dp"
             android:textStyle="bold"
             android:textColor="#000"
             />
@@ -52,17 +51,16 @@
             android:layout_height="wrap_content"
             android:text="@string/about_developer"
             android:gravity="center"
-            android:textSize="18dp"
+            android:textSize="10dp"
             android:textColor="#000"
             />
 
         <TextView
-            android:layout_marginTop="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Others"
             android:gravity="center"
-            android:textSize="20dp"
+            android:textSize="10dp"
             android:textStyle="bold"
             android:textColor="#000"
             />
@@ -73,7 +71,7 @@
             android:layout_height="wrap_content"
             android:text="Facebook\nhttps://www.facebook.com/hr5h4nt0"
             android:gravity="center"
-            android:textSize="18dp"
+            android:textSize="10dp"
             android:textColor="#000"
             android:textIsSelectable="true"
             />
@@ -83,7 +81,7 @@
             android:layout_height="wrap_content"
             android:text="Github\nhttps://github.com/HRahman1777"
             android:gravity="center"
-            android:textSize="18dp"
+            android:textSize="10dp"
             android:textColor="#000"
             android:textIsSelectable="true"
             />
@@ -93,7 +91,7 @@
             android:layout_height="wrap_content"
             android:text="Google Site\nhttps://sites.google.com/diu.edu.bd/hasibur1777"
             android:gravity="center"
-            android:textSize="18dp"
+            android:textSize="10dp"
             android:textColor="#000"
             android:textIsSelectable="true"
             />
