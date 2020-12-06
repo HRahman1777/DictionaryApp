@@ -74,7 +74,6 @@ public class MainDictonary extends AppCompatActivity {
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, uploads);
                 listView.setAdapter(adapter);
 
-
             }
 
             @Override

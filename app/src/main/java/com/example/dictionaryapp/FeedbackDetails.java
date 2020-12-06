@@ -63,13 +63,13 @@ public class FeedbackDetails extends AppCompatActivity {
                     uploadFeedbackDataList.add(uploadWord);
                 }
 
-                String[] uploads = new String[uploadFeedbackDataList.size()];
+                String[] words = new String[uploadFeedbackDataList.size()];
 
-                for (int i = 0; i < uploads.length; i++) {
-                    uploads[i] = uploadFeedbackDataList.get(i).getName();
+                for (int i = 0; i < words.length; i++) {
+                    words[i] = uploadFeedbackDataList.get(i).getName();
                 }
 
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, uploads);
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, words);
                 listView.setAdapter(adapter);
 
 

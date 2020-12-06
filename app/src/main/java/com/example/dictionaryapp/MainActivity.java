@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity{
 
-    public Button buttonLoad, buttonAdmin, buttonFeedback, buttonAboutInt;
+    public Button buttonLoad, buttonAdmin, buttonFeedback, buttonAboutInt, buttonQuiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity{
         buttonLoad = findViewById(R.id.dictBtnID);
         buttonFeedback = findViewById(R.id.feedbackBtnID);
         buttonAboutInt =findViewById(R.id.aboutBtnID);
+        buttonQuiz =findViewById(R.id.quizBtnID);
 
 
         buttonAdmin.setOnClickListener(new View.OnClickListener() {
@@ -59,6 +60,14 @@ public class MainActivity extends AppCompatActivity{
             public void onClick(View v) {
                 Intent intent;
                 intent = new Intent((MainActivity.this), (MainDictonary.class));
+                startActivity(intent);
+            }
+        });
+        buttonQuiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+                intent = new Intent((MainActivity.this), (Quiz.class));
                 startActivity(intent);
             }
         });

@@ -11,8 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FeedbackDetails"
-            android:parentActivityName=".AdminPanel" ></activity>
+        <activity android:name=".Result"
+            android:parentActivityName=".Quiz"></activity>
+        <activity android:name=".Quiz"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".FeedbackDetails"
+            android:parentActivityName=".AdminPanel" />
         <activity
             android:name=".MainDictonary"
             android:parentActivityName=".MainActivity" />

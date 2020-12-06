@@ -17,5 +17,10 @@ In this app here used Firebase as database. Admin can see feedback and also can 
         Department: CSE (49th Batch)
     </string>
 
+    <string-array name="rule_as">
+        <item>Student</item>
+        <item>Guest</item>
+    </string-array>
+
 
 </resources>
