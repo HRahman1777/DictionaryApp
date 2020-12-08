@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="15dp"
-    tools:context=".Feedback">
+    tools:context=".Feedback"
+    android:background="@drawable/bg2">
 
     <TextView
         android:layout_width="match_parent"
@@ -16,7 +17,7 @@
         android:gravity="center"
         android:layout_gravity="top"
         android:layout_marginBottom="10dp"
-        android:textColor="#4C0CA7"
+        android:textColor="#FDD835"
         android:textStyle="bold"
         />
 
@@ -25,7 +26,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="10dp"
-        android:background="#C8ABF3"
+        android:background="@drawable/general_layout_bg"
         >
         <TextView
             android:layout_width="wrap_content"
@@ -108,7 +109,7 @@
         android:orientation="vertical"
         android:layout_marginTop="10dp"
         android:padding="10dp"
-        android:background="#C8ABF3"
+        android:background="@drawable/general_layout_bg"
         >
         <TextView
             android:layout_width="wrap_content"
@@ -133,10 +134,10 @@
             android:layout_marginTop="5dp"
             android:id="@+id/submitfbBtnID"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="28dp"
             android:text="Submit"
             android:textSize="15dp"
-            android:background="#BC0091EA"
+            android:background="@drawable/button_bg_block_stock_trasp"
             android:textStyle="italic"
             android:textAllCaps="false"
             />

@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="10dp"
-        android:background="#60E1F7A4"
+        android:background="#A9E1F7A4"
         >
         <TextView
             android:id="@+id/quesOneID"
@@ -81,6 +81,7 @@
             android:textSize="12dp"
             android:background="#9C6F80EC"
             android:textStyle="bold"
+            android:textColor="#000"
             />
 
         <RadioGroup
@@ -113,6 +114,7 @@
             android:textSize="12dp"
             android:background="#9C6F80EC"
             android:textStyle="bold"
+            android:textColor="#000"
             />
 
         <RadioGroup
@@ -145,6 +147,7 @@
             android:textSize="12dp"
             android:background="#9C6F80EC"
             android:textStyle="bold"
+            android:textColor="#000"
             />
 
         <RadioGroup
@@ -176,7 +179,9 @@
             android:text="Question 4: Plage ? "
             android:textSize="12dp"
             android:background="#9C6F80EC"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -207,7 +212,9 @@
             android:text="Question 5: Useful?"
             android:textSize="12dp"
             android:background="#9C6F80EC"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -241,7 +248,7 @@
         android:layout_height="25dp"
         android:text="Submit"
         android:textSize="15dp"
-        android:background="#BC0091EA"
+        android:background="@drawable/button_bg_block_stock"
         android:textStyle="italic"
         android:textAllCaps="false" />
 
