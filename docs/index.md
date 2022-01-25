@@ -2,12 +2,14 @@
 Simple dictionary app with firebase database. Target to cover intent pass value, fragment, spinner, radio button, drawable resource(boder,stock).
 
 
+
 ## Home 
-<img alt="home" style="border-width:240" height="480" src="https://github.com/HRahman1777/DictionaryApp/blob/master/docs/ss/home.jpg" />
+![Home](https://github.com/HRahman1777/DictionaryApp/blob/master/docs/ss/home.jpg)
+
 
 ---
 ## Home <kbd>→</kbd> Go To Dictionary
-<img alt="List" style="border-width:240" height="480" src="https://github.com/HRahman1777/DictionaryApp/blob/master/docs/ss/dict.jpg" />
+![Dictionary](https://github.com/HRahman1777/DictionaryApp/blob/master/docs/ss/dict.jpg)
 
 ---
 ## Home <kbd>→</kbd> Quiz
